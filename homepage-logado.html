@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelhorConsulta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popups.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@21,300,1,0" />
+</head>
+<body>
+    <header class="frame header">
+        <p onclick="homepage()" class="logo">Melhor<br>Consulta</p>
+        <nav>
+            <ul class="buttons">
+                <li onclick="" class="button_in">Perfil</li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="frame inicial">
+        <div class="inicial_1">
+            <h1>Olá, <span id="nome-logado"></span> </h1>
+
+            <p class="medio">Marcar uma consulta agora ficou mais fácil do que nunca!<br>No Melhor Consulta simplifique sua experiência na busca por cuidados de saúde de alta qualidade.</p>
+        </div>
+        <img src="../assets/div1.jpg" class="imagem">
+    </div>  
+    <main class="gap_vert">
+        <div class="procura">
+            <p class="medio">Consulte aqui:</p>
+            <div>
+                <div class="div1">
+                <forms>
+                    <input  id="campo-pesquisa-logado" list="especialidades" type="text" placeholder="Digite a especialidade" class="campo_procura">
+                    <datalist id="especialidades">
+                    <option value="Acupunturista"></option>
+                    <option value="Alergista"></option>
+                    <option value="Anestesiologista"></option>
+                    <option value="Angiologista"></option>
+                        <option value="Oncologista"></option>
+                    <option value="Cardiologista"></option>
+                    <option value="Cirurgião buco-maxilo-facil"></option>
+                    <option value="Cirurgião cardiovascular"></option>
+                    <option value="Cirurgião cranio-maxilo-facil"></option>
+                    <option value="Cirurgião da mão"></option>
+                    <option value="Cirurgião de cabeça e pescoço"></option>
+                    <option value="Cirurgião do aparelho digestivo"></option>
+                    <option value="Cirurgião geral"></option>
+                    <option value="Cirurgião oncológico"></option>
+                    <option value="Cirurgião pediátrico"></option>
+                    <option value="Cirurgião torácico"></option>
+                    <option value="Cirurgião vascular"></option>
+                    <option value="Clínico geral"></option>
+                    <option value="Coloproctologista"></option>
+                    <option value="Especialista em dor"></option>
+                    <option value="Dermatologista"></option>
+                    <option value="Endocrinologista"></option>
+                    <option value="Endocrinologista pediátrico"></option>
+                    <option value="Endoscopista"></option>
+                    <option value="Fisioterapeuta"></option>
+                    <option value="Fonoaudiólogo"></option>
+                    <option value="Gastroenterologista"></option>
+                    <option value="Generalista"></option>
+                    <option value="Geneticista"></option>
+                    <option value="Geriatria"></option>
+                    <option value="Ginecologista"></option>
+                    <option value="Hematologista"></option>
+                    <option value="Homeopata"></option>
+                    <option value="Infectologista"></option>
+                    <option value="Infectologista pediátrico"></option>
+                    <option value="Mastologista"></option>
+                    <option value="Médico da família"></option>
+                    <option value="Médico de tráfego"></option>
+                    <option value="Médico de emergência"></option>
+                    <option value="Médico do sono"></option>
+                    <option value="Médico do trabalho"></option>
+                    <option value="Medicina estética"></option>
+                    <option value="Medicina física e reabilitação"></option>
+                    <option value="Médico hiperbarista"></option>
+                        <option value="Intensivista"></option>
+                        <option value="Internista"></option>
+                    <option value="Médico perito"></option>
+                    <option value="Medicina preventiva"></option>
+                    <option value="Nefrologista"></option>
+                    <option value="Nefrologista pediátrico"></option>
+                    <option value="Neurocirurgião"></option>
+                    <option value="Neurofisiologista"></option>
+                    <option value="Neurologista"></option>
+                    <option value="Neurologista pediátrico"></option>
+                    <option value="Nutricionista"></option>
+                    <option value="Nutrólogo"></option>
+                        <option value="Dentista"></option>
+                    <option value="Oftalmologista"></option>
+                    <option value="Ortopedista - Traumatologista"></option>
+                    <option value="Osteopata"></option>
+                    <option value="Otorrino"></option>
+                    <option value="Pediatria"></option>
+                    <option value="Pneumologista"></option>
+                    <option value="Pneumologista pediátrico"></option>
+                    <option value="Podologista"></option>
+                    <option value="Psicanalista"></option>
+                    <option value="Psicólogo"></option>
+                    <option value="Psiquiatria"></option>
+                    <option value="Quitopraxista"></option>
+                    <option value="Radiologista"></option>
+                    <option value="Reumatologista"></option>
+                    <option value="Reumatologista pediátrico"></option>
+                    <option value="Sexólogo"></option>
+                    <option value="Terapeuta ocupacional"></option>
+                    <option value="Terapeuta complementar"></option>
+                    <option value="Urologista"></option>
+                    <option value="Cardiologista pediátrico"></option>
+                    <option value="Hepatologista"></option>
+                    <option value="Gastroentologista pediátrico"></option>
+                    <option value="Ortodontista"></option>
+                    <option value="Educador físico"></option>
+                    </datalist>
+                </forms>
+                </div>
+                <div onclick="botaoPesquisaLogado()" id="botao-pesquisa" class="div2"><span class="material-symbols-outlined simbolo">search</span></div>
+            </div>
+            <p class="light lado"><span class="material-symbols-outlined">location_on</span>Belo Horizonte - MG</p>
+        </div>
+        <div class="gap_vert">
+            <p class="medio">Consultas perto de você</p>
+            <div class="carrossel">
+                <div class="frame consulta tam1"> 
+
+                    <p>Consulta de rotina</p>
+                    <p class="light">Consulta geral para check-up de saúde, avaliação de sintomas comuns e orientações preventivas.</p>
+                    <p>A partir de R$150,00</p>
+                    <div class="lado">
+                        <p class="lado">4,8 <span class="material-symbols-outlined">star_half</span></p>
+                        <button class="button_in info pequeno">mais informações...</button>
+                    </div>
+                </div>
+                <div class="frame consulta tam1">
+                    <p>Consulta de ortopedia para lesão no joelho</p>
+                    <p class="light">Consulta especializada para diagnosticar e tratar uma lesão no joelho.</p>
+                    <p>A partir de R$140,00</p>
+                    <div class="lado">
+                        <p class="lado">4,7 <span class="material-symbols-outlined">star_half</span></p>
+                        <button onclick="maisInformacoes2()" class="button_in info pequeno">mais informações...</button>
+                    </div>
+                </div>
+                <div class="frame consulta tam1">
+                    <p>Consulta de ginecologia para exames preventivos</p>
+                    <p class="light">Consulta ginecológica para exames de rotina, prevenção de doenças e saúde reprodutiva.</p>
+                    <p>A partir de R$180,00</p>
+                    <div class="lado">
+                        <p class="lado">4,9 <span class="material-symbols-outlined">star_half</span></p>
+                        <button class="button_in info pequeno">mais informações...</button>
+                    </div>
+                </div>
+                <div class="frame consulta tam1">
+                    <p>Consulta para avaliação de saúde do coração</p>
+                    <p class="light">Consulta cardiológica para avaliação de saúde do coração, diagnóstico de condições cardíacas e...</p>
+                    <p>A partir de R$220,00</p>
+                    <div class="lado">
+                        <p class="lado">4,6 <span class="material-symbols-outlined">star_half</span></p>
+                        <button class="button_in info pequeno">mais informações...</button>
+                    </div>
+                </div>
+                <div class="frame consulta tam1">
+                    <p>Consulta de pediatria para vacinação</p>
+                    <p class="light">Consulta pediátrica para vacinação, acompanham-ento do crescimento e desenvolvimento infantil.</p>
+                    <p>A partir de R$120,00</p>
+                    <div class="lado">
+                        <p class="lado">4,5 <span class="material-symbols-outlined">star_half</span></p>
+                        <button class="button_in info pequeno">mais informações...</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="gap_vert">
+            <p class="medio">Consultas realizadas</p>
+            <div class="lado">
+                <div class="frame consulta tam0">
+                    <p>Consulta de Odontologia para Limpeza e Avaliação</p>
+                    <p class="light">Consultório Odontológico, Av. dos Dentes, nº 555</p>
+                    <p>24/03/2024, 11:30</p>
+                    <div class="lado direita">
+                        <p></p>
+                        <button  onclick="popup_avaliar()" class="button_in info pequeno" id="botao-avaliar" >Avaliar consulta</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p class="logo_footer">Melhor<br>Consulta</p>
+        </div>
+        <section>
+            <ul class="li_footer">
+                <li class="li_tit">Serviços</li>
+                <li>Sobre nós</li>
+                <li>Contato</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="li_footer">
+                <li class="li_tit">Legal</li>
+                <li>Termos e condições</li>
+                <li>Política de privacidade</li>
+            </ul>
+        </section>
+        <p>Rua Durval Luís, 1488, 7º andar - Centro, Belo Horizonte - MG, CEP: 31742-414</p>
+    </footer>
+
+    <!--POP UP AVALIAR-->
+<dialog id="modal-avaliar">
+    <div class=".container.cadastro">
+        <div class="form-cadastro">
+
+            <div class="container-cadastro">
+                <section class="header-cadastro">
+                    <h2>Melhor <br> Consulta</h2>
+                </section>
+        
+                <section class="header2-cadastro">
+                    <h3>Avalie sua experiência</h3>
+                </section>
+
+                <div id="msg-erro-avaliar" class="msg-erro"></div>
+                <div id="msg-sucesso-avaliar" class="msg-sucesso"></div>
+                
+                <div class="conteudo-avaliacao">
+
+                 
+                    <!--AS ESTRELAS-->
+                    <div>
+                        <ul class="avaliar">
+                            <li class="star-icon ativo" nota-avaliacao="1"></li>
+                            <li class="star-icon" nota-avaliacao="2"></li>
+                            <li class="star-icon" nota-avaliacao="3"></li>
+                            <li class="star-icon" nota-avaliacao="4"></li>
+                            <li class="star-icon" nota-avaliacao="5"></li>
+                        </ul>
+                   </div>
+
+                   <div class="textarea">
+                    <label class="label-textarea" >Descreva como foi sua experiência: </label>
+                    <textarea id="area-texto" cols="30" rows="5" placeholder="Digite aqui..."></textarea>
+                    </div> 
+                </div>    
+                <div class="botao-submit">
+                    <button type="submit" onclick="avaliarConsulta()" class="botao-marcar">Avaliar consulta</button>
+                </div>                  
+            </div>
+        </div>
+    </div>
+</dialog>       
+        
+    <script src="logar.js"></script>
+    <script src="avaliar.js"></script>
+        <script src="pesquisa.js"></script>
+
+
+    <script>
+
+        const modalAvaliar = document.getElementById('modal-avaliar')
+        
+        function popup_avaliar() {
+
+            modalAvaliar.showModal();
+        }
+
+        function homepage(){
+            window.location.href = 'homepage-logado.html';
+
+        }
+
+        function maisInformacoes2(){
+            window.location.href = 'perfil-profissional2-logado.html';
+        }
+    </script>
+</body>
+</html>

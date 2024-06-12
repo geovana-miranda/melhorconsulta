@@ -1,0 +1,317 @@
+@import url("https://use.typekit.net/wyg2czj.css");
+
+.container-cadastro{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: 0 4px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+  }
+  
+  .header-cadastro{
+    background: linear-gradient(120deg, #7694FF 0%, #A1FFEE 100%);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0.05em;
+    letter-spacing: 0.09em; 
+  }
+
+  .header-cadastro h2{
+    color: #f9f9f9;
+  }
+  
+  .header2-cadastro{
+    background-color: #f9f9f9;
+    padding: 0.7em;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .header2-cadastro span {
+    background-image: linear-gradient(to bottom right, #7694FF, #A1FFEE);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .header2-cadastro-link {
+    font-size: 0.5em;
+    color: #363636;
+    font-weight: 300;
+    text-align: center;
+}
+
+  .form{
+    padding: 1em;
+  }
+  
+  .form-content{
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+    position: relative;
+  }
+  
+  .form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #363636;
+    font-weight: 300;
+  }
+ 
+   .form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+
+  .lado-lado {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;   
+  }
+
+  .botao-submit{
+    display: flex;
+    justify-content: center;
+  }
+    
+  .form button{
+    width: 50%;
+    border-radius: 14px;
+    padding: 0.5em;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+
+/*  .botao1 {
+    border: solid 0.2em #7694FF;
+    color: #7694FF;
+    background-color: transparent;
+  }*/
+
+  .botao2 {
+    background:linear-gradient(120deg, #7694FF 0%, #A1FFEE 100%);
+    color: #FFF;
+    border: none;
+  }
+
+  /* MENSAGEM DE ERRO */
+  
+  .msg-erro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  .msg-sucesso {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  #msg-erro-senha {
+    color: #ff0000;
+    padding-top: 8px;
+    display: none;
+  }
+
+  #msg-erro-login{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+
+  /* VISUALIZAR SENHA */
+  .fa-eye {
+    position: absolute;
+    top: 40px;
+    right: 13px;
+    cursor: pointer;
+    color:#121212;
+  }
+
+  /*POP UP */
+  dialog::backdrop{
+    background-color: rgba(0 0 0 / 0.5);
+  }
+
+  dialog {
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0 0 0 / 0.3);
+    margin: auto;
+    width: 25%;
+  }
+
+  
+
+
+  /*MARCAR CONSULTA */
+  
+  .form-marcar {
+  font-family: "Lato";
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: #363636;
+  box-sizing: border-box;
+  font-weight: 300;
+  }
+
+  .conteudo-consulta {
+    padding: 1em;
+    padding-left: 2em;
+  }
+
+  .negrito {
+    font-weight: bold;
+  }
+
+  .dia-pagamento {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+  }
+
+  .opcoes-dia {
+    display: flex;
+    gap: 2em;
+  }
+
+  .input-pag{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid #dfdfdf;
+    background-color: #dfdfdf;
+  } 
+
+  .forma-pagamento {
+    display: none;
+    flex-direction: column;
+    padding-bottom: 1em;
+    border: blue solid 5px;
+
+  }
+  
+  #form-pagamento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-pag{
+    padding-bottom: 0.3em;
+    position: relative;
+  }
+  
+  .form-pag label{
+    display: inline-block;
+    color: #363636;
+    font-weight: 300;
+  }
+  
+  .form-pag input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid #dfdfdf;
+  }
+
+  .dados {
+    display: flex;
+    gap: 1em;
+  }
+
+  .pagamento-cartao {
+    display: none;
+    width: 100%;
+  }
+
+  .botao-marcar {
+    background:linear-gradient(120deg, #7694FF 0%, #A1FFEE 100%);
+    color: #FFF;
+    border: none;
+    width: 50%;
+    border-radius: 14px;
+    padding: 0.5em;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+
+  /*AVALIAR CONSULTA*/
+
+.avaliar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0 2em 2em 2em;
+}
+
+.star-icon {
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 3em;
+}
+
+.star-icon::before{
+    content: "\2605" /*codigo da estrela*/
+}
+
+.star-icon.ativo ~ .star-icon::before {
+  content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+  content: "\2605";
+}
+
+.star-icon:hover ~ .star-icon::before {
+  content: "\2606";
+}
+
+.msg-erro-avaliar {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.msg-sucesso-avaliar {
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+
